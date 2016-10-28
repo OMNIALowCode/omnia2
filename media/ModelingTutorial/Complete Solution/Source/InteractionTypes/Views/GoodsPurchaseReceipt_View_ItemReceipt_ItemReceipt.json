@@ -1,0 +1,88 @@
+﻿{
+  "Code": "ItemReceipt_ItemReceipt",
+  "Name": {
+    "DefaultText": "Item Receipt",
+    "Translations": [
+      {
+        "LanguageCode": "en-US",
+        "Text": "Item Receipt"
+      }
+    ]
+  },
+  "Description": "Default view",
+  "MisEntityKind": "Event",
+  "MisEntityType": "GoodsPurchaseReceipt",
+  "InteractionType": "GoodsPurchaseReceipt",
+  "ProcessType": "PurchasesManagement",
+  "Select": "ID,Code,InteractionNumberSerie,InteractionNumber,Resource:Resource.Code,Amount,Quantity,QuantityFulfilled",
+  "OrderBy": "",
+  "GroupBy": "",
+  "Where": "",
+  "Label": {
+    "DefaultText": "",
+    "Translations": null
+  },
+  "VisibleOnScreenSizes": "hide,hide,xs,xs,xs,md,md,sm,xs",
+  "Actions": [
+    {
+      "ID": null,
+      "Code": "Edit",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 1,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Approve",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 2,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Print",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 3,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Remove",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 5,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Copy",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 6,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    }
+  ],
+  "HasCalendar": false,
+  "CalendarConfiguration": null,
+  "IsDashboardOnly": false,
+  "Aggregate": "",
+  "AggregateType": "",
+  "Top": null,
+  "ApplyToAllDependents": false,
+  "DateField": null,
+  "PlatformVersion": "V1",
+  "DefaultDateRange": "LastMonth"
+}

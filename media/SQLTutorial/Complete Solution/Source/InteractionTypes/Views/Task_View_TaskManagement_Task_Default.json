@@ -1,0 +1,88 @@
+﻿{
+  "Code": "TaskManagement_Task_Default",
+  "Name": {
+    "DefaultText": "Task",
+    "Translations": []
+  },
+  "Description": "",
+  "MisEntityKind": "Interaction",
+  "MisEntityType": "Task",
+  "InteractionType": "Task",
+  "ProcessType": "TaskManagement",
+  "Select": "NumberSerieCode,Number,DateCreated",
+  "OrderBy": "DateCreated DESC",
+  "GroupBy": "",
+  "Where": "",
+  "Label": {
+    "DefaultText": "Serie,Number,Date Created",
+    "Translations": [
+      {
+        "LanguageCode": "en-US",
+        "Text": "Serie,Number,Date Created"
+      }
+    ]
+  },
+  "VisibleOnScreenSizes": "",
+  "Actions": [
+    {
+      "ID": null,
+      "Code": "Edit",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 1,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Approve",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 2,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Revert",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 2,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Print",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 3,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Copy",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 6,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    }
+  ],
+  "HasCalendar": false,
+  "CalendarConfiguration": null,
+  "IsDashboardOnly": false,
+  "Aggregate": "",
+  "AggregateType": "",
+  "Top": 25,
+  "ApplyToAllDependents": false,
+  "DateField": "DateCreated",
+  "PlatformVersion": "V1",
+  "DefaultDateRange": "LastTwelveMonths"
+}

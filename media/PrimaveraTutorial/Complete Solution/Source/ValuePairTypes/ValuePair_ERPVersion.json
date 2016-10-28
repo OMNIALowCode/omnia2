@@ -1,0 +1,40 @@
+﻿{
+  "OriginalCode": "ERPVersion",
+  "Code": "ERPVersion",
+  "Values": [
+    {
+      "Value": "800",
+      "Text": {
+        "DefaultText": "Version 8",
+        "Translations": [
+          {
+            "LanguageCode": "pt-PT",
+            "Text": "Versão 8"
+          },
+          {
+            "LanguageCode": "en-US",
+            "Text": "Version 8"
+          }
+        ]
+      },
+      "Inactive": false
+    },
+    {
+      "Value": "900",
+      "Text": {
+        "DefaultText": "Version 9",
+        "Translations": [
+          {
+            "LanguageCode": "pt-PT",
+            "Text": "Versão 9"
+          },
+          {
+            "LanguageCode": "en-US",
+            "Text": "Version 9"
+          }
+        ]
+      },
+      "Inactive": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+﻿{
+  "Code": "5512759d-887f-4974-9634-7758e3c3ff0f",
+  "Name": "5512759d-887f-4974-9634-7758e3c3ff0f",
+  "ExternalSystemType": "SqlDatabase",
+  "MisEntityType": "ExternalTask",
+  "MisEntityKind": "UserDefinedEntity",
+  "ProcessType": "",
+  "OnAction": "RemoteQuery",
+  "OnMoment": "Request",
+  "OnCondition": "",
+  "OnFromApprovalStage": "",
+  "OnToApprovalStage": "",
+  "Files": [
+    {
+      "Code": "4c601776-4ccd-4648-b8c0-55cc70fd8ed9",
+      "ExecutionType": "Remote",
+      "Name": "SqlRemoteQuery.cs",
+      "PhysicalName": "4c601776-4ccd-4648-b8c0-55cc70fd8ed9.cs"
+    }
+  ],
+  "OnError": "0",
+  "UploadFiles": false
+}

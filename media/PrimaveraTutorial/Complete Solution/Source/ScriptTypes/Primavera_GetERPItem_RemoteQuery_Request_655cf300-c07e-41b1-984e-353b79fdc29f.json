@@ -1,0 +1,23 @@
+﻿{
+  "Code": "655cf300-c07e-41b1-984e-353b79fdc29f",
+  "Name": "655cf300-c07e-41b1-984e-353b79fdc29f",
+  "ExternalSystemType": "Primavera",
+  "MisEntityType": "GetERPItem",
+  "MisEntityKind": "UserDefinedEntity",
+  "ProcessType": "",
+  "OnAction": "RemoteQuery",
+  "OnMoment": "Request",
+  "OnCondition": "",
+  "OnFromApprovalStage": "",
+  "OnToApprovalStage": "",
+  "Files": [
+    {
+      "Code": "39c8d505-ace4-4dd8-ba79-b5027af46993",
+      "ExecutionType": "Remote",
+      "Name": "RemoteQuery.cs",
+      "PhysicalName": "39c8d505-ace4-4dd8-ba79-b5027af46993.cs"
+    }
+  ],
+  "OnError": "0",
+  "UploadFiles": false
+}

@@ -1,0 +1,88 @@
+﻿{
+  "Code": "GoodsPurchaseRequest_GoodsPurchaseRequest",
+  "Name": {
+    "DefaultText": "Goods Purchase Request",
+    "Translations": [
+      {
+        "LanguageCode": "en-US",
+        "Text": "Goods Purchase Request"
+      }
+    ]
+  },
+  "Description": "Default view",
+  "MisEntityKind": "Commitment",
+  "MisEntityType": "PurchaseRequest",
+  "InteractionType": "PurchaseRequest",
+  "ProcessType": "PurchasesManagement",
+  "Select": "ID,Code,InteractionNumberSerie,InteractionNumber,Resource:Resource.Code,Amount,Quantity,QuantityFulfilled,Agent:ReceiverAgent.Code,FulfillmentState,Interaction:Interaction.Completed,Interaction:Interaction.ApprovalFinished",
+  "OrderBy": "",
+  "GroupBy": "",
+  "Where": "",
+  "Label": {
+    "DefaultText": "",
+    "Translations": null
+  },
+  "VisibleOnScreenSizes": "hide,hide,xs,xs,xs,md,md,sm,xs,xs,hide,hide,hide",
+  "Actions": [
+    {
+      "ID": null,
+      "Code": "Edit",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 1,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Approve",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 2,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Print",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 3,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Remove",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 5,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Copy",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 6,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    }
+  ],
+  "HasCalendar": false,
+  "CalendarConfiguration": null,
+  "IsDashboardOnly": false,
+  "Aggregate": "",
+  "AggregateType": "",
+  "Top": null,
+  "ApplyToAllDependents": false,
+  "DateField": null,
+  "PlatformVersion": "V1",
+  "DefaultDateRange": "LastMonth"
+}

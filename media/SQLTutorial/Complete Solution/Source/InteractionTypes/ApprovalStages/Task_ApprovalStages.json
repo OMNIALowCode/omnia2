@@ -1,0 +1,74 @@
+﻿{
+  "ProcessTypeCode": "TaskManagement",
+  "MisEntityTypeCode": "Task",
+  "MisEntityKind": "Interaction",
+  "ApprovalStages": [
+    {
+      "Code": "Initial",
+      "Name": {
+        "DefaultText": "Initial",
+        "Translations": [
+          {
+            "LanguageCode": "en-US",
+            "Text": "Initial"
+          }
+        ]
+      },
+      "TransactionalEntityTypes": [],
+      "IsStartStage": true,
+      "IsEndStage": false,
+      "EvaluateExecution": "",
+      "NextStageWhenApproved": "Approval",
+      "NextStageWhenRejected": null,
+      "UIElements": [],
+      "ApproverRules": []
+    },
+    {
+      "Code": "Approval",
+      "Name": {
+        "DefaultText": "Approval",
+        "Translations": [
+          {
+            "LanguageCode": "en-US",
+            "Text": "Approval"
+          }
+        ]
+      },
+      "TransactionalEntityTypes": [],
+      "IsStartStage": false,
+      "IsEndStage": false,
+      "EvaluateExecution": "",
+      "NextStageWhenApproved": "Completed",
+      "NextStageWhenRejected": null,
+      "UIElements": [],
+      "ApproverRules": [
+        {
+          "Priority": 1,
+          "EvaluateExecution": "",
+          "AssignTo": "TaskApprover.User"
+        }
+      ]
+    },
+    {
+      "Code": "Completed",
+      "Name": {
+        "DefaultText": "Completed",
+        "Translations": [
+          {
+            "LanguageCode": "en-US",
+            "Text": "Completed"
+          }
+        ]
+      },
+      "TransactionalEntityTypes": [],
+      "IsStartStage": false,
+      "IsEndStage": true,
+      "EvaluateExecution": "",
+      "NextStageWhenApproved": null,
+      "NextStageWhenRejected": null,
+      "UIElements": [],
+      "ApproverRules": []
+    }
+  ],
+  "RemovedApprovalStages": []
+}

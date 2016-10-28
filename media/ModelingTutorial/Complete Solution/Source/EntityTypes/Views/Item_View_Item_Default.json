@@ -1,0 +1,88 @@
+﻿{
+  "Code": "Item_Default",
+  "Name": {
+    "DefaultText": "Item",
+    "Translations": []
+  },
+  "Description": "",
+  "MisEntityKind": "Resource",
+  "MisEntityType": "Item",
+  "InteractionType": null,
+  "ProcessType": null,
+  "Select": "Code,Description",
+  "OrderBy": "Code ASC",
+  "GroupBy": "",
+  "Where": "",
+  "Label": {
+    "DefaultText": "Code,Description",
+    "Translations": [
+      {
+        "LanguageCode": "en-US",
+        "Text": "Code,Description"
+      }
+    ]
+  },
+  "VisibleOnScreenSizes": "",
+  "Actions": [
+    {
+      "ID": null,
+      "Code": "Edit",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 1,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Approve",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 2,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Remove",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 2,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Print",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 3,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Copy",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 6,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    }
+  ],
+  "HasCalendar": false,
+  "CalendarConfiguration": null,
+  "IsDashboardOnly": false,
+  "Aggregate": "",
+  "AggregateType": "",
+  "Top": 25,
+  "ApplyToAllDependents": false,
+  "DateField": "",
+  "PlatformVersion": "V1",
+  "DefaultDateRange": "LastMonth"
+}

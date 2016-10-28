@@ -1,0 +1,101 @@
+﻿{
+  "Code": "2807e098840c4f5da874e3cebda6f1c4",
+  "Name": {
+    "DefaultText": "ExternalProject",
+    "Translations": [
+      {
+        "LanguageCode": "en-US",
+        "Text": "ExternalProject"
+      }
+    ]
+  },
+  "Description": null,
+  "MisEntityKind": "UserDefinedEntity",
+  "MisEntityType": "ExternalProject",
+  "InteractionType": null,
+  "ProcessType": null,
+  "Select": "Code,Name,BeginDate",
+  "OrderBy": "",
+  "GroupBy": "",
+  "Where": "",
+  "Label": {
+    "DefaultText": "Code,Name,BeginDate",
+    "Translations": [
+      {
+        "LanguageCode": "pt-PT",
+        "Text": ",,"
+      },
+      {
+        "LanguageCode": "en-US",
+        "Text": "Code,Name,BeginDate"
+      },
+      {
+        "LanguageCode": "es-ES",
+        "Text": ",,"
+      }
+    ]
+  },
+  "VisibleOnScreenSizes": ",,",
+  "Actions": [
+    {
+      "ID": null,
+      "Code": "Edit",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 1,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Approve",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 2,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Print",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 3,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Remove",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 5,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Copy",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 6,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    }
+  ],
+  "HasCalendar": false,
+  "CalendarConfiguration": null,
+  "IsDashboardOnly": false,
+  "Aggregate": "",
+  "AggregateType": "",
+  "Top": null,
+  "ApplyToAllDependents": false,
+  "DateField": null,
+  "PlatformVersion": "V1",
+  "DefaultDateRange": "LastMonth"
+}

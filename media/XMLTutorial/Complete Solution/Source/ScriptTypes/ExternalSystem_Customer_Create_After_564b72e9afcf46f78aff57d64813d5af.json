@@ -1,0 +1,29 @@
+﻿{
+  "Code": "564b72e9afcf46f78aff57d64813d5af",
+  "Name": "CreateCustomerFile",
+  "ExternalSystemType": "ExternalSystem",
+  "MisEntityType": "Customer",
+  "MisEntityKind": "Agent",
+  "ProcessType": "",
+  "OnAction": "Create",
+  "OnMoment": "After",
+  "OnCondition": "",
+  "OnFromApprovalStage": "",
+  "OnToApprovalStage": "",
+  "Files": [
+    {
+      "Code": "0a1a7286-32ea-4065-87de-0e025d22c45f",
+      "ExecutionType": "Local",
+      "Name": "auxiliary.js",
+      "PhysicalName": "0a1a7286-32ea-4065-87de-0e025d22c45f.js"
+    },
+    {
+      "Code": "c21ee7da-4504-4633-956d-d133a388a647",
+      "ExecutionType": "Remote",
+      "Name": "CustomerHTMLandPDF.cs",
+      "PhysicalName": "c21ee7da-4504-4633-956d-d133a388a647.cs"
+    }
+  ],
+  "OnError": "Fail",
+  "UploadFiles": false
+}

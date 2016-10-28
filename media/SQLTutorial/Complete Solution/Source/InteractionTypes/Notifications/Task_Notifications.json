@@ -1,0 +1,146 @@
+﻿{
+  "ProcessTypeCode": "TaskManagement",
+  "MisEntityTypeCode": "Task",
+  "MisEntityKind": "Interaction",
+  "Notifications": [
+    {
+      "ID": 1,
+      "Code": "1db70aeb-9ba1-4fe4-bcd6-faa877a99ebd",
+      "NotificationTriggerID": 1,
+      "NotificationTriggerCode": "NtfTrigger_Approve_Task_Initial",
+      "FiredOnOperation": "Approve",
+      "FiredOnApprovalStage": "Initial",
+      "FiredOnCondition": "",
+      "To": "[CreatedBy.ContactEmail]",
+      "CarbonCopy": "",
+      "BlindCarbonCopy": "",
+      "Subject": {
+        "DefaultText": "{0} rejected",
+        "Translations": []
+      },
+      "SubjectParameters": "[MisEntityType.Code]",
+      "Body": {
+        "DefaultText": "Your {0} {1}/{2} has been rejected by {3}",
+        "Translations": []
+      },
+      "BodyParameters": "[MisEntityType.Code],[NumberSerieCode],[Number],[PreviousApprover.Email]",
+      "Inactive": false
+    },
+    {
+      "ID": 2,
+      "Code": "544ee6ac-c96b-4a7c-9553-915eb7b6279c",
+      "NotificationTriggerID": 2,
+      "NotificationTriggerCode": "NtfTrigger_Revert_Task_Initial",
+      "FiredOnOperation": "Revert",
+      "FiredOnApprovalStage": "Initial",
+      "FiredOnCondition": "",
+      "To": "[PreviousApproverEmail]",
+      "CarbonCopy": "",
+      "BlindCarbonCopy": "",
+      "Subject": {
+        "DefaultText": "{0} {1}/{2} has been reverted",
+        "Translations": []
+      },
+      "SubjectParameters": "[MisEntityType.Code],[NumberSerieCode],[Number]",
+      "Body": {
+        "DefaultText": "<p>{0} {1}/{2} was reverted and is no longer waiting for your approval. Please ignore previous e-mail</p><p><b>Reverted by: </b>{3}</p><p><b>Reversion date: </b>{4}</p>",
+        "Translations": []
+      },
+      "BodyParameters": "[MisEntityType.Code],[NumberSerieCode],[Number],[Approver.Email],[ModifiedDate]",
+      "Inactive": false
+    },
+    {
+      "ID": 3,
+      "Code": "c65906b6-65c9-4702-bb9c-3f4a2e568773",
+      "NotificationTriggerID": 3,
+      "NotificationTriggerCode": "NtfTrigger_Approve_Task_Approval",
+      "FiredOnOperation": "Approve",
+      "FiredOnApprovalStage": "Approval",
+      "FiredOnCondition": "",
+      "To": "[ApproverContactEmail]",
+      "CarbonCopy": "",
+      "BlindCarbonCopy": "",
+      "Subject": {
+        "DefaultText": "{0} {1}/{2} is waiting for your approval",
+        "Translations": []
+      },
+      "SubjectParameters": "[MisEntityType.Code],[NumberSerieCode],[Number]",
+      "Body": {
+        "DefaultText": "<p>{0} {1}/{2} is waiting for your approval</p><p><b>Stage: </b>Approval</p><p><b>Created by: </b>{3}</p>",
+        "Translations": []
+      },
+      "BodyParameters": "[MisEntityType.Code],[NumberSerieCode],[Number],[CreatedBy.ContactEmail]",
+      "Inactive": false
+    },
+    {
+      "ID": 4,
+      "Code": "746fbf99-e230-4801-833a-a43c347c15a3",
+      "NotificationTriggerID": 4,
+      "NotificationTriggerCode": "NtfTrigger_Revert_Task_Approval",
+      "FiredOnOperation": "Revert",
+      "FiredOnApprovalStage": "Approval",
+      "FiredOnCondition": "",
+      "To": "[PreviousApproverEmail]",
+      "CarbonCopy": "",
+      "BlindCarbonCopy": "",
+      "Subject": {
+        "DefaultText": "{0} {1}/{2} has been reverted",
+        "Translations": []
+      },
+      "SubjectParameters": "[MisEntityType.Code],[NumberSerieCode],[Number]",
+      "Body": {
+        "DefaultText": "<p>{0} {1}/{2} was reverted and is no longer waiting for your approval. Please ignore previous e-mail</p><p><b>Reverted by: </b>{3}</p><p><b>Reversion date: </b>{4}</p>",
+        "Translations": []
+      },
+      "BodyParameters": "[MisEntityType.Code],[NumberSerieCode],[Number],[Approver.Email],[ModifiedDate]",
+      "Inactive": false
+    },
+    {
+      "ID": 5,
+      "Code": "5a8d2e84-fd0d-4a7a-b1c4-0a5ff81a65e9",
+      "NotificationTriggerID": 5,
+      "NotificationTriggerCode": "NtfTrigger_Approve_Task_Completed",
+      "FiredOnOperation": "Approve",
+      "FiredOnApprovalStage": "Completed",
+      "FiredOnCondition": "",
+      "To": "[CreatedBy.ContactEmail]",
+      "CarbonCopy": "",
+      "BlindCarbonCopy": "",
+      "Subject": {
+        "DefaultText": "{0} approved",
+        "Translations": []
+      },
+      "SubjectParameters": "[MisEntityType.Code]",
+      "Body": {
+        "DefaultText": "Your {0} {1}/{2} has been approved by {3}",
+        "Translations": []
+      },
+      "BodyParameters": "[MisEntityType.Code],[NumberSerieCode],[Number],[PreviousApprover.Email]",
+      "Inactive": false
+    },
+    {
+      "ID": 6,
+      "Code": "f826b62d-3171-4f95-86f5-fad009cd98d5",
+      "NotificationTriggerID": 6,
+      "NotificationTriggerCode": "NtfTrigger_Revert_Task_Completed",
+      "FiredOnOperation": "Revert",
+      "FiredOnApprovalStage": "Completed",
+      "FiredOnCondition": "",
+      "To": "[PreviousApproverEmail]",
+      "CarbonCopy": "",
+      "BlindCarbonCopy": "",
+      "Subject": {
+        "DefaultText": "{0} {1}/{2} has been reverted",
+        "Translations": []
+      },
+      "SubjectParameters": "[MisEntityType.Code],[NumberSerieCode],[Number]",
+      "Body": {
+        "DefaultText": "<p>{0} {1}/{2} was reverted and is no longer waiting for your approval. Please ignore previous e-mail</p><p><b>Reverted by: </b>{3}</p><p><b>Reversion date: </b>{4}</p>",
+        "Translations": []
+      },
+      "BodyParameters": "[MisEntityType.Code],[NumberSerieCode],[Number],[Approver.Email],[ModifiedDate]",
+      "Inactive": false
+    }
+  ],
+  "RemovedNotifications": []
+}

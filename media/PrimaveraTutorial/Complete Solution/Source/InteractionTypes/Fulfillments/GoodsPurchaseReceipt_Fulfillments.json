@@ -1,0 +1,63 @@
+﻿{
+  "ProcessTypeCode": "PurchasesManagement",
+  "Code": "GoodsPurchaseReceipt",
+  "Rules": [
+    {
+      "TransactionEntityTypeCode": "ItemReceipt",
+      "Fulfillments": [
+        {
+          "Code": "ItemReceipt_GoodsPurchaseRequest",
+          "CanFulfill": "GoodsPurchaseRequest",
+          "CanFulfillProcessTypeCode": "PurchasesManagement",
+          "CanFulfillInteractionTypeCode": "PurchaseRequest",
+          "FulfillmentKindID": 0,
+          "Attribute": "CompanyCode",
+          "ConditionElements": "",
+          "ConditionOperators": "",
+          "ConditionValues": "",
+          "ListCode": "GoodsPurchaseRequest_GoodsPurchaseRequest",
+          "RelationshipFulfillment": "",
+          "Properties": [
+            {
+              "From": "Code",
+              "To": "CommitmentToFulfill"
+            },
+            {
+              "From": "Resource.Code",
+              "To": "Resource"
+            },
+            {
+              "From": "Quantity",
+              "To": "Quantity"
+            },
+            {
+              "From": "Quantity",
+              "To": "AmountToFulfill"
+            },
+            {
+              "From": "Amount",
+              "To": "Amount"
+            },
+            {
+              "From": "DateOccurred",
+              "To": "DateOccurred"
+            },
+            {
+              "From": "WhenNoticed",
+              "To": "WhenNoticed"
+            },
+            {
+              "From": "ProviderAgent.Code",
+              "To": "ProviderAgent"
+            },
+            {
+              "From": "ReceiverAgent.Code",
+              "To": "ReceiverAgent"
+            }
+          ]
+        }
+      ],
+      "RemovedFulfillments": []
+    }
+  ]
+}

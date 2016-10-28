@@ -1,0 +1,48 @@
+﻿{
+  "OriginalCode": "Homepage",
+  "Code": "Homepage",
+  "Name": {
+    "DefaultText": "Homepage Dashboard",
+    "Translations": [
+      {
+        "LanguageCode": "en-US",
+        "Text": "Homepage Dashboard"
+      }
+    ]
+  },
+  "Description": {
+    "DefaultText": "",
+    "Translations": []
+  },
+  "IsHomepageDashboard": true,
+  "DefaultDateRange": "CurrentYear",
+  "Elements": [
+    {
+      "Title": {
+        "DefaultText": "Pending Purchase Requests",
+        "Translations": [
+          {
+            "LanguageCode": "en-US",
+            "Text": "Pending Purchase Requests"
+          }
+        ]
+      },
+      "Description": {
+        "DefaultText": "",
+        "Translations": []
+      },
+      "Row": 1,
+      "Column": 1,
+      "Size": 12,
+      "Kind": "List",
+      "MaxNumberOfElements": 10,
+      "VisibleOnScreenSizes": "",
+      "CompareWithCorrespondingPeriod": true,
+      "List": "c11756f3fd8f45fda6ca107be8c0bb57",
+      "Chart": "",
+      "Dimensions": null,
+      "SelectedDimensions": "",
+      "HideUntilHaveData": false
+    }
+  ]
+}

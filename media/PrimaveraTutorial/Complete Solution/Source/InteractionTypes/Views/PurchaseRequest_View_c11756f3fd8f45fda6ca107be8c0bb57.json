@@ -1,0 +1,101 @@
+﻿{
+  "Code": "c11756f3fd8f45fda6ca107be8c0bb57",
+  "Name": {
+    "DefaultText": "Pending Purchase Requests",
+    "Translations": [
+      {
+        "LanguageCode": "en-US",
+        "Text": "Pending Purchase Requests"
+      }
+    ]
+  },
+  "Description": null,
+  "MisEntityKind": "Interaction",
+  "MisEntityType": "PurchaseRequest",
+  "InteractionType": "PurchaseRequest",
+  "ProcessType": "PurchasesManagement",
+  "Select": "NumberSerieCode,Number,DateCreated,Agent:#Supplier.Code,Agent:Company.Code,ApproverEmail",
+  "OrderBy": "",
+  "GroupBy": "",
+  "Where": "ApprovalStageCode='ManagerApprove'",
+  "Label": {
+    "DefaultText": "Serie,Number,Date,Supplier,Company,Approver",
+    "Translations": [
+      {
+        "LanguageCode": "pt-PT",
+        "Text": ",,,,,"
+      },
+      {
+        "LanguageCode": "en-US",
+        "Text": "Serie,Number,Date,Supplier,Company,Approver"
+      },
+      {
+        "LanguageCode": "es-ES",
+        "Text": ",,,,,"
+      }
+    ]
+  },
+  "VisibleOnScreenSizes": ",,,,,",
+  "Actions": [
+    {
+      "ID": null,
+      "Code": "Edit",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 1,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Approve",
+      "Label": null,
+      "IsAvailable": false,
+      "Order": 2,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Print",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 2,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Revert",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 3,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    },
+    {
+      "ID": null,
+      "Code": "Copy",
+      "Label": null,
+      "IsAvailable": true,
+      "Order": 4,
+      "ActionKind": "",
+      "Script": "",
+      "IconCode": null
+    }
+  ],
+  "HasCalendar": false,
+  "CalendarConfiguration": null,
+  "IsDashboardOnly": false,
+  "Aggregate": "",
+  "AggregateType": "",
+  "Top": null,
+  "ApplyToAllDependents": false,
+  "DateField": null,
+  "PlatformVersion": "V1",
+  "DefaultDateRange": "LastMonth"
+}

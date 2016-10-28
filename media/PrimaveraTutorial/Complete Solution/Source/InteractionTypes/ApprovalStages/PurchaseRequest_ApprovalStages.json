@@ -1,0 +1,76 @@
+﻿{
+  "ProcessTypeCode": "PurchasesManagement",
+  "MisEntityTypeCode": "PurchaseRequest",
+  "MisEntityKind": "Interaction",
+  "ApprovalStages": [
+    {
+      "Code": "Pending",
+      "Name": {
+        "DefaultText": "Pending",
+        "Translations": [
+          {
+            "LanguageCode": "en-US",
+            "Text": "Pending"
+          }
+        ]
+      },
+      "TransactionalEntityTypes": [],
+      "IsStartStage": true,
+      "IsEndStage": false,
+      "EvaluateExecution": "",
+      "NextStageWhenApproved": "ManagerApprove",
+      "NextStageWhenRejected": null,
+      "UIElements": [],
+      "ApproverRules": []
+    },
+    {
+      "Code": "ManagerApprove",
+      "Name": {
+        "DefaultText": "Manager Approve",
+        "Translations": [
+          {
+            "LanguageCode": "en-US",
+            "Text": "Manager Approve"
+          }
+        ]
+      },
+      "TransactionalEntityTypes": [
+        "GoodsPurchaseRequest"
+      ],
+      "IsStartStage": false,
+      "IsEndStage": false,
+      "EvaluateExecution": "",
+      "NextStageWhenApproved": "Completed",
+      "NextStageWhenRejected": "Pending",
+      "UIElements": [],
+      "ApproverRules": [
+        {
+          "Priority": 1,
+          "EvaluateExecution": "",
+          "AssignTo": "Company.Manager.User"
+        }
+      ]
+    },
+    {
+      "Code": "Completed",
+      "Name": {
+        "DefaultText": "Completed",
+        "Translations": [
+          {
+            "LanguageCode": "en-US",
+            "Text": "Completed"
+          }
+        ]
+      },
+      "TransactionalEntityTypes": [],
+      "IsStartStage": false,
+      "IsEndStage": true,
+      "EvaluateExecution": "",
+      "NextStageWhenApproved": null,
+      "NextStageWhenRejected": null,
+      "UIElements": [],
+      "ApproverRules": []
+    }
+  ],
+  "RemovedApprovalStages": []
+}

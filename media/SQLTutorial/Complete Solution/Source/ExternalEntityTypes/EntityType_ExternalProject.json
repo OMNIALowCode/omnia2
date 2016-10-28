@@ -1,0 +1,27 @@
+﻿{
+  "OriginalCode": "ExternalProject",
+  "Code": "ExternalProject",
+  "Name": {
+    "DefaultText": "ExternalProject",
+    "Translations": [
+      {
+        "LanguageCode": "en-US",
+        "Text": "ExternalProject"
+      }
+    ]
+  },
+  "Query": "SELECT [Code]\n      ,[Name]\n      ,[BeginDate]\n  FROM [dbo].[Project]\n  WHERE [EndDate] IS NULL\n",
+  "QueryKeyParameter": "Code",
+  "ExternalSystemType": "SqlDatabase",
+  "ExternalHelpLinks": null,
+  "Hidden": false,
+  "IsContact": false,
+  "ContactConfiguration": null,
+  "RemoteScriptFile": {
+    "Code": "33dc8bd7-c9ac-4fbb-ab0d-d748e35dcfc6",
+    "ExecutionType": null,
+    "Name": "SqlRemoteQuery.cs"
+  },
+  "UploadScripts": false,
+  "CreateDefaultScripts": null
+}

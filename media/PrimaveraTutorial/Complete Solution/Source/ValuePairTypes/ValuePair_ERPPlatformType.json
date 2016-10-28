@@ -1,0 +1,40 @@
+﻿{
+  "OriginalCode": "ERPPlatformType",
+  "Code": "ERPPlatformType",
+  "Values": [
+    {
+      "Value": "tpEmpresarial",
+      "Text": {
+        "DefaultText": "Executive",
+        "Translations": [
+          {
+            "LanguageCode": "pt-PT",
+            "Text": "Executive"
+          },
+          {
+            "LanguageCode": "en-US",
+            "Text": "Executive"
+          }
+        ]
+      },
+      "Inactive": false
+    },
+    {
+      "Value": "tpProfissional",
+      "Text": {
+        "DefaultText": "Professional",
+        "Translations": [
+          {
+            "LanguageCode": "pt-PT",
+            "Text": "Profissional"
+          },
+          {
+            "LanguageCode": "en-US",
+            "Text": "Professional"
+          }
+        ]
+      },
+      "Inactive": false
+    }
+  ]
+}

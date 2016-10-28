@@ -1,0 +1,29 @@
+﻿{
+  "Code": "a058de7c9c324c40a4aa353bd8b6e1ad",
+  "Name": "PurchaseOrder",
+  "ExternalSystemType": "Primavera",
+  "MisEntityType": "PurchaseRequest",
+  "MisEntityKind": "Interaction",
+  "ProcessType": "PurchasesManagement",
+  "OnAction": "Approve",
+  "OnMoment": "After",
+  "OnCondition": "",
+  "OnFromApprovalStage": "ManagerApprove",
+  "OnToApprovalStage": "Completed",
+  "Files": [
+    {
+      "Code": "68b8ed9a-928b-463d-88dc-6350d1e459af",
+      "ExecutionType": "Local",
+      "Name": "68b8ed9a-928b-463d-88dc-6350d1e459af.js",
+      "PhysicalName": "68b8ed9a-928b-463d-88dc-6350d1e459af.js"
+    },
+    {
+      "Code": "baba7071-7d07-42e4-8633-65d4b9785328",
+      "ExecutionType": "Remote",
+      "Name": "PurchaseOrder.cs",
+      "PhysicalName": "baba7071-7d07-42e4-8633-65d4b9785328.cs"
+    }
+  ],
+  "OnError": "Fail",
+  "UploadFiles": false
+}

@@ -1,0 +1,29 @@
+﻿{
+  "Code": "7689f39e1edf44fc8cb6dbd198db06eb",
+  "Name": "Integrate",
+  "ExternalSystemType": "SqlDatabase",
+  "MisEntityType": "Task",
+  "MisEntityKind": "Interaction",
+  "ProcessType": "TaskManagement",
+  "OnAction": "Approve",
+  "OnMoment": "After",
+  "OnCondition": "",
+  "OnFromApprovalStage": "Approval",
+  "OnToApprovalStage": "Completed",
+  "Files": [
+    {
+      "Code": "3c0032af-2f44-4cbd-a6f4-7a49918d1b09",
+      "ExecutionType": "Local",
+      "Name": "3c0032af-2f44-4cbd-a6f4-7a49918d1b09.js",
+      "PhysicalName": "3c0032af-2f44-4cbd-a6f4-7a49918d1b09.js"
+    },
+    {
+      "Code": "2b0975b4-c19f-4f2c-a7bb-a42c787cd589",
+      "ExecutionType": "Remote",
+      "Name": "SqlIntegrateTask.cs",
+      "PhysicalName": "2b0975b4-c19f-4f2c-a7bb-a42c787cd589.cs"
+    }
+  ],
+  "OnError": "Fail",
+  "UploadFiles": false
+}

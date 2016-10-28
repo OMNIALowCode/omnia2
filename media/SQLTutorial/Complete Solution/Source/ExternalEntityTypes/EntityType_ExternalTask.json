@@ -1,0 +1,27 @@
+﻿{
+  "OriginalCode": "ExternalTask",
+  "Code": "ExternalTask",
+  "Name": {
+    "DefaultText": "ExternalTask",
+    "Translations": [
+      {
+        "LanguageCode": "en-US",
+        "Text": "ExternalTask"
+      }
+    ]
+  },
+  "Query": "SELECT [ID]\n      ,[ProjectID]\n      ,[Description]\n      ,[Completed]\n  FROM [dbo].[Task]\n",
+  "QueryKeyParameter": "ID",
+  "ExternalSystemType": "SqlDatabase",
+  "ExternalHelpLinks": null,
+  "Hidden": false,
+  "IsContact": false,
+  "ContactConfiguration": null,
+  "RemoteScriptFile": {
+    "Code": "4c601776-4ccd-4648-b8c0-55cc70fd8ed9",
+    "ExecutionType": null,
+    "Name": "SqlRemoteQuery.cs"
+  },
+  "UploadScripts": false,
+  "CreateDefaultScripts": null
+}

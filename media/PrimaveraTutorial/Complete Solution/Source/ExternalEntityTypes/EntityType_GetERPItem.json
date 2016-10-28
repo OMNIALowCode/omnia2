@@ -1,0 +1,27 @@
+﻿{
+  "OriginalCode": "GetERPItem",
+  "Code": "GetERPItem",
+  "Name": {
+    "DefaultText": "Get ERP Item",
+    "Translations": [
+      {
+        "LanguageCode": "en-US",
+        "Text": "Get ERP Item"
+      }
+    ]
+  },
+  "Query": "SELECT Artigo, Descricao FROM Artigo",
+  "QueryKeyParameter": "Artigo",
+  "ExternalSystemType": "Primavera",
+  "ExternalHelpLinks": null,
+  "Hidden": false,
+  "IsContact": false,
+  "ContactConfiguration": null,
+  "RemoteScriptFile": {
+    "Code": "39c8d505-ace4-4dd8-ba79-b5027af46993",
+    "ExecutionType": null,
+    "Name": "RemoteQuery.cs"
+  },
+  "UploadScripts": false,
+  "CreateDefaultScripts": null
+}

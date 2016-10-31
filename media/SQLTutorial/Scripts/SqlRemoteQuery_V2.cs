@@ -385,8 +385,12 @@ namespace myMIS
                 cmd.Connection.Close();
             }
 
+            if (table.Columns.Count > 0 && string.Equals(table.Columns[0].ColumnName, "_MYMIS_ROW_NUMBER_"))
+                table.Columns.RemoveAt(0);
+			
             string[] headers = new string[table.Columns.Count];
             object[,] data = new object[table.Rows.Count, table.Columns.Count];
+			
 
             for (short i = 0; i < table.Columns.Count; i++)
             {

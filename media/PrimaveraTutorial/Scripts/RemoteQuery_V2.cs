@@ -410,19 +410,24 @@ namespace myMIS
             int numLinhas = queryResults.NumLinhas();
             int numColunas = queryResults.NumColunas();
 
-            string[] headers = new string[numColunas];
-            for (short i = 0; i < numColunas; i++)
+            // If being used to create the external entity, ignore the _MYMIS_ROW_NUMBER_ column
+            short startingColumn = 0;
+            if (numColunas > 0 && string.Equals(queryResults.Nome(0), "_MYMIS_ROW_NUMBER_"))
+                startingColumn++;
+
+            string[] headers = new string[numColunas - startingColumn];
+            for (short i = startingColumn; i < numColunas; i++)
             {
-                headers[i] = queryResults.Nome(i);
+                headers[i - startingColumn] = queryResults.Nome(i);
             }
 
-            object[,] data = new object[numLinhas, numColunas];
+            object[,] data = new object[numLinhas, numColunas - startingColumn];
             for (short i = 0; i < numLinhas; i++)
             {
-                for (short j = 0; j < numColunas; j++)
+                for (short j = startingColumn; j < numColunas; j++)
                 {
-                    var nome = headers[j];
-                    data[i, j] = queryResults.Valor(nome);
+                    var nome = headers[j - startingColumn];
+                    data[i, j - startingColumn] = queryResults.Valor(nome);
                 }
                 queryResults.Seguinte();
             }

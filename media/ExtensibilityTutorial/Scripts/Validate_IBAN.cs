@@ -10,6 +10,7 @@ namespace myMIS
         public ScriptResponse Execute(ContextData context, Entity document, Dictionary<string, object> parameters)
         {
 
+		
 			if(!ValidateBankAccount(document.Attributes.IBAN))
 				throw new Exception($"The provided IBAN Account Number ({document.Attributes.IBAN}) is not valid!");
 		
@@ -21,6 +22,8 @@ namespace myMIS
             bankAccount = bankAccount.ToUpper(); //IN ORDER TO COPE WITH THE REGEX BELOW
             if (String.IsNullOrEmpty(bankAccount))
                 return false;
+			if (bankAccount.Length < 4)
+				return false;
             else if (System.Text.RegularExpressions.Regex.IsMatch(bankAccount, "^[A-Z0-9]"))
             {
                 bankAccount = bankAccount.Replace(" ", String.Empty);

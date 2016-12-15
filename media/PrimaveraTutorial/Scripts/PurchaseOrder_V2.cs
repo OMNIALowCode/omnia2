@@ -44,7 +44,7 @@ namespace myMIS
 
                 try
                 {
-                    bsERP.AbreEmpresaTrabalho(tipoPlataforma, (string)externalSystem.Parameters["Company"], (string)externalSystem.Parameters["Username"], (string)externalSystem.Parameters["Password"]);
+                    bsERP.AbreEmpresaTrabalho(tipoPlataforma, externalSystem.Code, (string)externalSystem.Parameters["Username"], (string)externalSystem.Parameters["Password"]);
                 }
                 catch (Exception e)
                 {

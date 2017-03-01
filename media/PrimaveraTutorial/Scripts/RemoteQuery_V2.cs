@@ -134,28 +134,18 @@ namespace myMIS
             {
                 string roleFilterSentence = string.Empty;
 
-                string filter = string.Empty;
+                string filter = rolePrivilege;
 
                 //Process Query Filter
                 if (!string.IsNullOrEmpty(filter))
                 {
 
-                    Dictionary<string, ExpandoObject> filterDictionary =
-                        Regex.Split(filter, "\\||&")
-                        .Select(s => Regex.Split(s, "(<=|>=|<>|=|<|>)"))
-                        .ToDictionary(k => k[0] + k[1] + k[2], v => new ExpandoObject());
-
-
                     string filterSentence = filter;
-
 
                     var filterCollection = Regex.Split(filter, "\\||&");
 
-
-
                     foreach (var filterClause in filterCollection)
                     {
-
                         string filterAux = filterClause;
 
                         //var filterDecomposed = Regex.Split(filterAux.Replace("(", "").Replace(")", ""), "(>=|<=|<>|=|<|>)"); //GF: 2014.06.23
@@ -410,24 +400,19 @@ namespace myMIS
             int numLinhas = queryResults.NumLinhas();
             int numColunas = queryResults.NumColunas();
 
-            // If being used to create the external entity, ignore the _MYMIS_ROW_NUMBER_ column
-            short startingColumn = 0;
-            if (numColunas > 0 && string.Equals(queryResults.Nome(0), "_MYMIS_ROW_NUMBER_"))
-                startingColumn++;
-
-            string[] headers = new string[numColunas - startingColumn];
-            for (short i = startingColumn; i < numColunas; i++)
+            string[] headers = new string[numColunas];
+            for (short i = 0; i < numColunas; i++)
             {
-                headers[i - startingColumn] = queryResults.Nome(i);
+                headers[i] = queryResults.Nome(i);
             }
 
-            object[,] data = new object[numLinhas, numColunas - startingColumn];
+            object[,] data = new object[numLinhas, numColunas];
             for (short i = 0; i < numLinhas; i++)
             {
-                for (short j = startingColumn; j < numColunas; j++)
+                for (short j = 0; j < numColunas; j++)
                 {
-                    var nome = headers[j - startingColumn];
-                    data[i, j - startingColumn] = queryResults.Valor(nome);
+                    var nome = headers[j];
+                    data[i, j] = queryResults.Valor(nome);
                 }
                 queryResults.Seguinte();
             }

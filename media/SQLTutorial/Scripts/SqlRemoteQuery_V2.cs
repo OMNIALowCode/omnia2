@@ -122,7 +122,7 @@ namespace myMIS
             {
                 string roleFilterSentence = string.Empty;
 
-                string filter = string.Empty;
+                string filter = rolePrivilege;
 
                 //Process Query Filter
                 if (!string.IsNullOrEmpty(filter))

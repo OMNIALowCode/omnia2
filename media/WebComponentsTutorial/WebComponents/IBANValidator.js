@@ -1,5 +1,6 @@
 /*
 Developed by: NumbersBelieve
+Function: IBAN validation and display in a row.
 Parameters:
 	The interaction or entity must have an IBAN attribute.
 	Visually, the component should have 10 size - otherwise, you may need to adjust the HTML.

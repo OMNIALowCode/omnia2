@@ -29,6 +29,7 @@ namespace myMIS
         const string WILDCARD_MULTIPLE = "*";
         const string WILDCARD_SINGLE = "?";
 
+		//This method is the entry point of the script. Here, all the auxiliary methods are called, first to obtain the desired query, then to execute it in the external system.
         public ScriptResponse Execute(ContextData context, Entity document, Dictionary<string, object> parameters)
         {
             string where = document.Where;
@@ -364,6 +365,7 @@ namespace myMIS
             return whereStatement;
         }
 
+		//Method that executes the query in the external system.
         private ScriptResponse executeQuery(ContextData context, Entity document, string query)
         {
             ErpBS bsERP = new ErpBS();

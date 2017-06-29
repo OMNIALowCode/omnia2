@@ -48,7 +48,7 @@ WebComponents.Map = function () {
 		map.setAttribute('allowfullscreen', '');
 
 		if (address !== '') {
-			address = _mymis.Utils.text.replaceAll(address, { ', ': ',', ' ': '+' });
+			address = platform.utils.text.replaceAll(address, { ', ': ',', ' ': '+' });
 			map.src = 'https://www.google.com/maps/embed/v1/place?key=@@APIKEY@@&zoom=16&q=' + address;
 		}
 		else {

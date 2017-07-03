@@ -402,8 +402,6 @@ namespace myMIS
             int numLinhas = queryResults.NumLinhas();
             int numColunas = queryResults.NumColunas();
 
-            string[] headers = new string[numColunas];
-            for (short i = 0; i < numColunas; i++)
             // If being used to create the external entity, ignore the _MYMIS_ROW_NUMBER_ column
             short startingColumn = 0;
             if (numColunas > 0 && string.Equals(queryResults.Nome(0), "_MYMIS_ROW_NUMBER_"))
